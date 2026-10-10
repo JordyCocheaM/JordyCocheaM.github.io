@@ -1,0 +1,525 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Casa del Postre</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f7;
+            color: #4a2c2a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* ENCABEZADO */
+
+        .encabezado {
+            background: linear-gradient(135deg, #ff4f81, #ff8fab);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .encabezado img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .encabezado h1 {
+            margin: 10px 0 5px 0;
+            font-size: 40px;
+        }
+
+        .encabezado p {
+            font-size: 18px;
+        }
+
+        /* MENÚ */
+
+        .menu {
+            background: #5c2636;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background: #ff4f81;
+        }
+
+        /* SECCIONES */
+
+        .seccion {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .titulo {
+            color: #d6336c;
+            font-size: 30px;
+        }
+
+        /* PRESENTACIÓN */
+
+        .presentacion {
+            background: white;
+        }
+
+        .imagen-principal {
+            width: 450px;
+            max-width: 90%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #aaa;
+        }
+
+        .texto {
+            max-width: 800px;
+            margin: auto;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        /* PRODUCTOS */
+
+        .productos {
+            background: #ffe5ec;
+        }
+
+        .producto {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ccc;
+            vertical-align: top;
+            transition: 0.3s;
+        }
+
+        .producto:hover {
+            transform: translateY(-8px);
+        }
+
+        .producto img {
+            width: 200px;
+            max-width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .precio {
+            color: #d6336c;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* SERVICIOS */
+
+        .servicios {
+            background: white;
+        }
+
+        .servicio {
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* PROMOCIÓN */
+
+        .promocion {
+            background: linear-gradient(135deg, #ff4f81, #ff8fab);
+            color: white;
+            padding: 40px;
+        }
+
+        .promocion h2 {
+            font-size: 35px;
+        }
+
+        .oferta {
+            background: white;
+            color: #d6336c;
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        /* CONTACTO */
+
+        .contacto {
+            background: #fff0f4;
+        }
+
+        .contacto p {
+            font-size: 18px;
+        }
+
+        .redes a {
+            display: inline-block;
+            margin: 8px;
+            padding: 10px 20px;
+            background: #d6336c;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        .redes a:hover {
+            background: #5c2636;
+        }
+
+        /* PIE DE PÁGINA */
+
+        .pie {
+            background: #5c2636;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<table>
+
+    <!-- ENCABEZADO -->
+
+    <tr>
+
+        <td colspan="4" class="encabezado">
+
+            <img src="logo.jpeg.jpeg"
+                 alt="Logo La Casa del Postre">
+
+            <h1>LA CASA DEL POSTRE</h1>
+
+            <p>El lugar donde cada momento se vuelve más dulce</p>
+
+        </td>
+
+    </tr>
+
+    <!-- MENÚ -->
+
+    <tr class="menu">
+
+        <td align="center">
+            <a href="#inicio">Inicio</a>
+        </td>
+
+        <td align="center">
+            <a href="#productos">Productos</a>
+        </td>
+
+        <td align="center">
+            <a href="#servicios">Servicios</a>
+        </td>
+
+        <td align="center">
+            <a href="#contacto">Contacto</a>
+        </td>
+
+    </tr>
+
+    <!-- PRESENTACIÓN -->
+
+    <tr id="inicio">
+
+        <td colspan="4" class="seccion presentacion">
+
+            <h2 class="titulo">
+                Bienvenidos a La Casa del Postre
+            </h2>
+
+            <img src="pasteleria.jpeg.jpeg"
+                 class="imagen-principal"
+                 alt="Pastelería">
+
+            <br><br>
+
+            <p class="texto">
+
+                La Casa del Postre es un emprendimiento dedicado
+                a la elaboración de deliciosos pasteles, cupcakes
+                y postres artesanales.
+
+                <br><br>
+
+                Nuestro objetivo es ofrecer productos de calidad,
+                preparados con creatividad y dedicación para
+                endulzar cada uno de tus momentos especiales.
+
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- PRODUCTOS -->
+
+    <tr id="productos" class="productos">
+
+        <td colspan="4" class="seccion">
+
+            <h2 class="titulo">
+                Nuestros Productos
+            </h2>
+
+        </td>
+
+    </tr>
+
+    <tr class="productos">
+
+        <!-- PRODUCTO 1 -->
+
+        <td class="producto">
+
+            <h3>Torta de Chocolate</h3>
+
+            <img src="torta-chocolate.jpeg.jpeg"
+                 alt="Torta de Chocolate">
+
+            <p>
+                Deliciosa torta de chocolate
+                decorada con crema y fresas.
+            </p>
+
+            <p class="precio">
+                $15,00
+            </p>
+
+        </td>
+
+        <!-- PRODUCTO 2 -->
+
+        <td class="producto">
+
+            <h3>Cupcakes Especiales</h3>
+
+            <img src="cupcakes.jpeg.jpeg"
+                 alt="Cupcakes">
+
+            <p>
+                Cupcakes decorados especialmente
+                para cumpleaños y celebraciones.
+            </p>
+
+            <p class="precio">
+                $8,00
+            </p>
+
+        </td>
+
+        <!-- PRODUCTO 3 -->
+
+        <td class="producto">
+
+            <h3>Cheesecake de Fresa</h3>
+
+            <img src="cheesecake.jpeg.jpeg"
+                 alt="Cheesecake">
+
+            <p>
+                Delicioso cheesecake artesanal
+                acompañado con fresas frescas.
+            </p>
+
+            <p class="precio">
+                $12,00
+            </p>
+
+        </td>
+
+        <!-- PRODUCTO 4 -->
+
+        <td class="producto">
+
+            <h3>Galletas Decoradas</h3>
+
+            <img src="galletas.jpeg.jpeg"
+                 alt="Galletas">
+
+            <p>
+                Galletas artesanales decoradas
+                para cualquier ocasión especial.
+            </p>
+
+            <p class="precio">
+                $5,00
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- SERVICIOS -->
+
+    <tr id="servicios">
+
+        <td colspan="4" class="seccion servicios">
+
+            <h2 class="titulo">
+                Nuestros Servicios
+            </h2>
+
+        </td>
+
+    </tr>
+
+    <tr class="servicios">
+
+        <td colspan="2"
+            class="servicio"
+            align="center">
+
+            <h3>🎂 Pasteles Personalizados</h3>
+
+            <p>
+                Creamos pasteles personalizados
+                según tus gustos y celebraciones.
+            </p>
+
+        </td>
+
+        <td colspan="2"
+            class="servicio"
+            align="center">
+
+            <h3>🎉 Eventos Especiales</h3>
+
+            <p>
+                Preparamos postres para cumpleaños,
+                bodas y todo tipo de eventos.
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- PROMOCIÓN -->
+
+    <tr>
+
+        <td colspan="4"
+            class="seccion promocion">
+
+            <h2>
+                🎉 PROMOCIÓN ESPECIAL 🎉
+            </h2>
+
+            <div class="oferta">
+                ¡10% DE DESCUENTO!
+            </div>
+
+            <p>
+                Por la compra de cualquier torta personalizada
+                recibe un 10% de descuento.
+            </p>
+
+        </td>
+
+    </tr>
+
+    <!-- CONTACTO -->
+
+    <tr id="contacto">
+
+        <td colspan="4"
+            class="seccion contacto">
+
+            <h2 class="titulo">
+                Contáctanos
+            </h2>
+
+            <p>
+                📍 <b>Dirección:</b>
+                Salinas, Ecuador
+            </p>
+
+            <p>
+                📱 <b>Teléfono:</b>
+                099 999 9999
+            </p>
+
+            <p>
+                📧 <b>Correo:</b>
+                lacasadelpostre@gmail.com
+            </p>
+
+            <div class="redes">
+
+                <a href="https://www.instagram.com/">
+                    Instagram
+                </a>
+
+                <a href="https://www.facebook.com/">
+                    Facebook
+                </a>
+
+            </div>
+
+        </td>
+
+    </tr>
+
+    <!-- PIE DE PÁGINA -->
+
+    <tr>
+
+        <td colspan="4" class="pie">
+
+            <p>
+                Página desarrollada por:
+                <b>Jordy Alejandro Cochea Muñoz</b>
+                <b>del Colegio Militar N.9 Eugenio Espejo</b>
+            </p>
+
+            <p>
+                <b>Curso:</b> 2 BTE A
+            </p>
+
+            <p>
+                <b>Año lectivo:</b> 2026 - 2027
+            </p>
+
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+
+</html>
+
